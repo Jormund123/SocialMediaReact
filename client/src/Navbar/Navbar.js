@@ -1,12 +1,15 @@
 import React from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 export default function Navbar() {
     return (
         <div className='topbarContainer'>
             <div className='topbarLeft'>
-                <span className='logo'>Echoes</span>
+                <Link to='/' style={{ textDecoration: "none" }}>
+                    <span className='logo'>Echoes</span>
+                </Link>
             </div>
             <div className='topbarCenter'>
                 <div className='searchbar'>
